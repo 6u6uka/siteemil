@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'ClearSansBold';
+    src: url('fonts/ClearSansBold.eot');
+    src: url('fonts/ClearSansBold.eot') format('embedded-opentype'),
+         url('fonts/ClearSansBold.woff2') format('woff2'),
+         url('fonts/ClearSansBold.woff') format('woff'),
+         url('fonts/ClearSansBold.ttf') format('truetype'),
+         url('fonts/ClearSansBold.svg#ClearSansBold') format('svg');
+}

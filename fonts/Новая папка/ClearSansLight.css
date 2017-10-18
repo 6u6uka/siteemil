@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'ClearSansLight';
+    src: url('fonts/ClearSansLight.eot');
+    src: url('fonts/ClearSansLight.eot') format('embedded-opentype'),
+         url('fonts/ClearSansLight.woff2') format('woff2'),
+         url('fonts/ClearSansLight.woff') format('woff'),
+         url('fonts/ClearSansLight.ttf') format('truetype'),
+         url('fonts/ClearSansLight.svg#ClearSansLight') format('svg');
+}

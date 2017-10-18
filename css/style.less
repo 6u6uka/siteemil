@@ -1,0 +1,357 @@
+
+/*============    ШРИФТЫ    ===========*/
+@font-face {
+    font-family: 'ClearSansBold';
+    src: url('fonts/ClearSansBold.eot');
+    src: url('fonts/ClearSansBold.eot') format('embedded-opentype'),
+         url('fonts/ClearSansBold.woff2') format('woff2'),
+         url('fonts/ClearSansBold.woff') format('woff'),
+         url('fonts/ClearSansBold.ttf') format('truetype'),
+         url('fonts/ClearSansBold.svg#ClearSansBold') format('svg');
+}
+@font-face {
+    font-family: 'ClearSansLight';
+    src: url('fonts/ClearSansLight.eot');
+    src: url('fonts/ClearSansLight.eot') format('embedded-opentype'),
+         url('fonts/ClearSansLight.woff2') format('woff2'),
+         url('fonts/ClearSansLight.woff') format('woff'),
+         url('fonts/ClearSansLight.ttf') format('truetype'),
+         url('fonts/ClearSansLight.svg#ClearSansLight') format('svg');
+}
+@font-face {
+    font-family: 'ClearSansMedium';
+    src: url('fonts/ClearSansMedium.eot');
+    src: url('fonts/ClearSansMedium.eot') format('embedded-opentype'),
+         url('fonts/ClearSansMedium.woff2') format('woff2'),
+         url('fonts/ClearSansMedium.woff') format('woff'),
+         url('fonts/ClearSansMedium.ttf') format('truetype'),
+         url('fonts/ClearSansMedium.svg#ClearSansMedium') format('svg');
+}
+
+
+.bold {
+	font-family: 'ClearSansBold' ;
+}
+.light {
+	font-family:'ClearSansLight' ;
+}
+.med {
+	font-family: 'ClearSansMedium';
+
+}
+
+/*=======================    Шапка   ========================*/
+header {
+	color: #666666;
+	padding-top: 25px;
+	padding-bottom: 20px;
+	.descript {
+		h3 {
+			.med;
+			text-transform: uppercase;
+			font-size: 30px ;
+			color: #505050;
+		}
+
+	
+	} 
+	.phone_number {
+		text-align: right;
+		a{
+			font-size: 20px;
+		}
+		p {
+			.light;
+
+		}
+		a{
+		.med;
+		color: #505050;
+		&:hover {
+			text-decoration: none;
+			}
+			display: inline-block;
+		&:before {
+			vertical-align: middle;
+			margin-right: 2px;
+			content: '';
+			width: 20px;
+			height: 20px;
+			background: url(../img/phoneicon.png) no-repeat center center;
+			display: inline-block;
+			margin-bottom: 1px;
+			}
+		}
+
+	}
+
+}
+/*============    лого    ===========*/
+.logotype{
+	img{
+		margin-bottom: 34px;
+	}
+}
+/*============    базовые    ===========*/
+a:hover,
+a:focus,
+a:visited,
+a:active {
+	text-decoration: none;
+}
+
+/*=======================    Меню     ========================*/
+menu {
+	ul.list-inline a {
+		.light;
+		display: inline-block;
+		text-transform: uppercase;
+		padding: 20px 10px;
+		color: #000;
+				-moz-transition: all 0.2s 0.02s ease;
+				-o-transition: all 0.2s 0.02s ease;
+				-webkit-transition: all 0.2s 0.02s ease;
+		&:hover{
+			text-decoration: none;
+			background-color: #505050;
+			color: #fff;
+			}
+	}
+	ul.list-inline {
+		margin-bottom: 42px;
+		border-bottom: 1px solid black;
+	}
+}
+/*============================    Карзина    =========================*/
+
+/*============================    CARD    =========================*/
+	nov1{
+		.card ul,
+		.card li {
+			margin:0;
+			padding:0;
+			list-style-type: none;
+		}
+		.card li{
+			display:inline-block;
+			width: 300px;
+			position: relative;
+			margin-left: 10px;
+			margin-right: 10px;
+			margin-bottom: 14px;
+			margin-top: 14px;
+		}
+		.card img {
+			max-width: 100%;
+			display: block;
+		}
+		.descr {
+			position: absolute;
+			top:0;
+			left:0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,0.3);
+			opacity: 0;
+			transform: scale(0);
+			-webkit-transition: all .35s;
+			-o-transition: all .35s;
+			transition: all .35s;
+			border-radius: 30%
+		}
+		.card li:hover .descr {
+			display: block;
+			opacity: 1;
+			transform: scale(1);
+			border-radius: 0%;
+		}
+
+
+	}
+	nov2 {
+		.card2 ul,
+		.card2 li {
+			margin:0;
+			padding:0;
+			list-style-type: none;
+		}
+		.card2 li{
+			display:inline-block;
+			width: 300px;
+			position: relative;
+			margin-left: 10px;
+			margin-right: 10px;
+			margin-bottom: 14px;
+			margin-top: 14px;
+
+		}
+		.card2 img {
+			max-width: 100%;
+			display: block;
+		}
+		.descr2 {
+			position: absolute;
+			top:0;
+			left:0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,0.3);
+			opacity: 0;
+			transform: scale(0);
+			-webkit-transition: all .35s;
+			-o-transition: all .35s;
+			transition: all .35s;
+			border-radius: 30%
+
+		}
+		.card2 li:hover .descr2 {
+			display: block;
+			opacity: 1;
+			transform: scale(1);
+			border-radius: 0%;		
+		}
+
+	}
+/*=======================    Слайдер с девушкой    ========================*/
+.sl_girls {
+	max-width: 1900px;
+	margin: 20px auto;
+	width: 100%;
+	
+	
+
+}
+
+.sl_first_slider {
+	position: relative;
+}
+
+/*=======================    Слайдеры    ========================*/
+.sl {
+	max-width: 948px;
+	margin: 20px auto;
+	width: 100%;
+	margin-top: 54px;
+}
+.sl_slide{
+	position: relative;
+
+	img{
+		width: 50%;
+		margin-left: 25%;
+	}
+}
+
+.desc {
+	.light;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+
+}
+
+.sl_insta {
+	max-width: 948px;
+	margin: 20px auto;
+	width: 100%;
+	margin-bottom: 3px;
+
+}
+.sl_ins {
+	position: relative;
+	img{
+		width: 100%;
+		
+	}
+
+}
+.insta_log {
+	position: relative;
+	img{
+		max-width: 948px;
+		}
+	
+}
+/*============    футер    ===========*/
+
+
+
+
+
+/*=======================    insta    =====================*/
+
+
+/*=================    МАГАЗИН    =================*/
+.score {
+	margin: 0 auto;
+	width: 50%;
+	margin-top: 200px;
+	margin-left: 31%;
+}
+.score ul,
+.score li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+
+}
+.score li{
+	display: inline-block;
+	width: 300px;
+}
+.score img{
+	max-width: 50%;
+	display: block;
+}
+.descr_score {
+	position: relative;
+	margin-left: 15%
+}
+
+/*============    Контакты    ===========*/
+
+.yandexmap {
+	display: inline-block;
+	margin-left: 26%;
+	margin-bottom: 54px;
+}
+.contact {
+	.bold;
+	font-size: 20px;
+	margin-bottom: 54px;
+}
+
+/*============    ШРИФТЫ    ===========*/
+
+/*============    ШРИФТЫ    ===========*/
+
+/*============    ШРИФТЫ    ===========*/
+
+/*============    ПОДВАЛ    ===========*/
+
+/*============    	ВСПЛЫВАЮЩИЕ ОКНА    ===========*/
+
+/*============    	АДАПТИВ    ===========*/
+
+@media(min-width:0px) and (max-width:320px) {
+	
+}
+
+@media(min-width:321px) and (max-width:480px) {
+	
+}
+
+@media(min-width:481px) and (max-width:768px) {
+	
+}
+
+@media(min-width:769px) and (max-width:992px) {
+	
+}
+
+@media(min-width:993px) and (max-width:1200px) {
+	
+}
