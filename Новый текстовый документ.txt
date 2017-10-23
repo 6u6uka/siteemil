@@ -1,0 +1,40 @@
+header {
+    color: #666666;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    .descript {
+        h3 {
+            .med;
+            text-transform: uppercase;
+            font-size: 30px;
+            color: #505050;
+        }
+    }
+    .phone_number {
+        text-align: right;
+        a {
+            font-size: 20px;
+        }
+        p {
+            .light;
+        }
+        a {
+            .med;
+            color: #505050;
+            &:hover {
+                text-decoration: none;
+            }
+            display: inline-block;
+            &:before {
+                vertical-align: middle;
+                margin-right: 2px;
+                content: '';
+                width: 20px;
+                height: 20px;
+                background: url(../img/phoneicon.png) no-repeat center center;
+                display: inline-block;
+                margin-bottom: 1px;
+            }
+        }
+    }
+}
